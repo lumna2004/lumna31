@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Professional Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#1c1e22;
+      --card:#2a2d31;
+      --accent:#ffffff;
+      --muted:#c7c7c7;
+      --line:#3e4044;
+      --radius:18px;
+      --gray-light:#d9d9d9;
+      --white:#ffffff;
+      --gray-mid:#a1a1a1;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:Poppins, sans-serif;
+      background:var(--bg);
+      padding:26px; display:flex; justify-content:center; color:var(--accent);
+    }
+
+    .wrapper{
+      width:450px;max-width:100%;background:var(--card);
+      border-radius:var(--radius);
+      padding:36px 28px 44px;
+      box-shadow:0 15px 40px rgba(0,0,0,0.4);
+      position:relative;overflow:hidden;
+      border:1px solid #3b3d40;
+    }
+
+    .top-deco{
+      position:absolute;top:0;left:0;width:100%;height:120px;
+      background:#3a3d41;
+      border-bottom:1px solid #4a4d52;
+      z-index:0;
+    }
+
+    .header{text-align:center;margin-bottom:20px;position:relative;z-index:2;}
+
+    .avatar{
+      width:140px;height:140px;border-radius:50%;margin:0 auto;
+      overflow:hidden;border:4px solid var(--white);
+      box-shadow:0 6px 20px rgba(0,0,0,0.4);
+      margin-top:20px;
+    }
+    .avatar img{width:100%;height:100%;object-fit:cover}
+
+    h1{font-size:28px;font-weight:600;margin-top:14px;color:var(--white)}
+    .subtext{color:var(--gray-mid);font-size:14px;margin-top:2px}
+
+    .section-title{
+      font-weight:600;font-size:17px;margin:28px 0 14px;
+      color:var(--white);
+      padding-left:12px;border-left:4px solid var(--gray-light);
+    }
+
+    .info-box{
+      background:#2f3237;padding:14px 18px;border-radius:var(--radius);
+      border:1px solid var(--line);margin-bottom:12px;font-size:14px;
+      display:flex;align-items:center;gap:12px;color:var(--gray-light);
+    }
+    .info-icon{
+      width:18px;height:18px;background:var(--white);
+      border-radius:4px;
+    }
+
+    .skill{
+      background:#36393e;border:1px solid #4a4d52;
+      padding:10px 14px;border-radius:var(--radius);
+      margin-bottom:10px;font-size:14px;font-weight:500;
+      display:flex;align-items:center;gap:10px;
+      color:var(--gray-light);
+    }
+    .dot{
+      width:10px;height:10px;background:var(--white);border-radius:50%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="top-deco"></div>
+
+    <div class="header">
+      <div class="avatar">
+        <img src="picture.jpg.jpg" alt="profile-img">
+      </div>
+      <h1>Moamar M. Lumna</h1>
+      <p class="subtext">Aspiring Tech Learner • Beginner in Programming</p>
+    </div>
+
+    <div class="section-title">About Me</div>
+    <div class="info-box"><div class="info-icon"></div>Age: 21</div>
+    <div class="info-box"><div class="info-icon"></div>Location: Novaliches Proper, Quezon City</div>
+    <div class="info-box"><div class="info-icon"></div>Status: Student</div>
+
+    <div class="section-title">Skills</div>
+    <div class="skill"><div class="dot"></div>Communication</div>
+    <div class="skill"><div class="dot"></div>Time Management</div>
+    <div class="skill"><div class="dot"></div>Adaptability</div>
+    <div class="skill"><div class="dot"></div>Willingness to Learn</div>
+
+  </div>
+
+</body>
+</html>
